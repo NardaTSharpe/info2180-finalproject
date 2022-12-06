@@ -1,0 +1,13 @@
+.resMsg{
+    display: inline-block;
+    color: #a77171;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.resMsgSuccess{
+    display: inline-block;
+    color: #b3c3a2;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

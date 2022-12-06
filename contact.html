@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responses.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Dolphin CRM</title>
+</head>
+<body>
+    <header>
+        <i class="fa-brands fa-docker"></i>        
+        <p class="title">Dolphin CRM</p>
+    </header>
+
+    <main>
+        <div class="main-header">
+            <h1 class="dashboard-title">New Contact</h1>
+        </div>
+
+        <div class="main-container">
+            <form action="" method="post" id="addcontact-form">
+                <div class="form-input title-input">
+                    <label for="title">Title</label> 
+                    <select name="title">  
+                        <option value="Mr">Mr</option>}  
+                        <option value="Mrs">Mrs</option>  
+                        <option value="Miss">Miss</option>  
+                        <option value="Ms">Ms</option> 
+                    </select>
+                </div> 
+
+                <div class="form-grid">
+                    <div class="form-input">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" required placeholder="Jane">
+                    </div>
+                        <div class="form-input">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" required placeholder="Doe">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required placeholder="something@example.com">
+                    </div>
+                    <div class="form-input">
+                        <label for="telephone">Telephone</label>
+                        <input type="text" name="telephone" required placeholder="1876-999-9999">
+                    </div>
+                    <div class="form-input">
+                        <label for="company">Company</label>
+                        <input type="text" name="company" required>
+                    </div>
+                
+                    <div class="form-input type">
+                    <label for="type">Type</label> 
+                    <select name="type" required>  
+                            <option value="Sales Lead">Sales Lead</option> 
+                            <option value="Support">Support</option>  
+                    </select>
+                   </div>  
+
+                <div class="form-input assigned-to" id="result">
+
+                </div>
+            </div>
+
+                <div id="response-message" class="response-container">
+
+                </div>
+                <div class="save-btn-container">
+                    <input type="submit" name="save" class="save-btn-input btn" id="save-btn" value="Save">
+                </div>
+            </form>
+        </div>
+
+        
+    </main>
+
+    <aside>
+        <div class="aside-container">
+            <ul>
+                <li><i class="fa-solid fa-house"></i><p><a href="dashboard.html">Home</a></p></li>
+                <li><i class="fa-solid fa-user"></i><p><a href="contact.html">New Contact</a></p></li>
+                <li><i class="fa-solid fa-users"></i><p><a href="users.html">Users</a></p></li>
+            </ul>
+            <hr>
+            <div class="logout"><i class="fa-solid fa-right-from-bracket"></i><p><a href="#">Logout</a></p></div>
+        </div>
+    </aside>
+    <script src="contact.js"></script>
+</body>
+</html>
