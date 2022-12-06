@@ -1,7 +1,7 @@
 <?php session_start();
     $host = 'localhost';
-    $username = 'tia_user';
-    $password = 'password123';
+    $username = '';
+    $password = '';
     $dbname = 'dolphin_crm';
 
 
