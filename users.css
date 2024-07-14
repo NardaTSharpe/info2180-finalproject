@@ -1,0 +1,140 @@
+main .title {
+    font-weight: bold;
+}
+
+.main-header a { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #5249E4;
+    color: #F3F3F3;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    border: none;
+}
+
+.user-container, .adduser-container {
+    border: 1px solid #a7a9b3;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px; 
+}
+
+.user-container table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.user-container-non-admin{
+    border: 1px solid #a7a9b3;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    padding: 25px; 
+}
+
+
+table thead{
+    background-color: #F3F4F6;
+    height: 50px;   
+}
+
+table tbody tr{
+    border-bottom: 1px solid lightgray;
+    height: 40px;
+}
+
+table tbody tr .name{
+    font-weight: bold;
+}
+
+
+#adduser-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.input-div{
+    gap: 10px;
+  }
+
+.adduser-container #name-div, .adduser-container #auth-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.adduser-container .input-div, .adduser-container #role-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-div, #auth-div, #role-div {
+    width: 100%;
+}
+
+#fname-div, #lname-div, #email-div, #password-div {
+    width: 50%;
+}
+
+input {
+    width: 100%;
+}
+
+select {
+    width: 50%;
+}
+
+input, select {
+    height: 35px;
+    padding: 5px;
+    border-radius: 0;
+    border: 1px solid;
+    font: inherit;
+    color: inherit;
+    background-color: #fdfdfd;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+#role {
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#submit-user {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #5249E4;
+    color: #F3F3F3;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    border: none;
+    float: right;
+}
+
+#response {
+    color: red;
+}
+
+.email, .role, .created_at{
+   color: #a7a9b3;
+}
+
+.add-user-btn a:hover{
+    background-color: #2c2883;
+}

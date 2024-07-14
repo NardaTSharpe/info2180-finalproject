@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+/* Reset Styling */
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+input, button{
+    font: inherit;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+body{
+  font-family: 'Fira Sans', sans-serif;
+  display: grid;
+  grid-template-columns: 2fr 10fr; 
+  grid-template-rows: 1fr 11fr;
+  grid-template-areas:
+  "hd hd" 
+  "sd mn";
+  color: #233043;
+  line-height: 1.5;
+}
+
+header{
+  background-color: #233043;
+  color: #fdfdfd;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  grid-area: hd;
+}
+
+header .title{
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+main{
+  background-color: #F3F4F6;
+  height: 100%; 
+  padding-bottom: 20px;
+
+  grid-area: mn;
+}
+
+
+.main-header{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+.main-container{
+    border: 1px solid #a7a9b3;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding:25px;
+  }
+  
+.main-title{
+    font-weight: bold;
+  }
+  
+
+  aside{
+    grid-area: sd;
+}
+
+aside .aside-container{
+    margin-top: 90px;
+    font-weight: bold;
+}
+
+aside .aside-container p{
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+aside .aside-container p:hover{
+    color: #425b85;
+}
+
+aside ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+aside ul li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+aside ul li i{
+    width: 10%;
+    text-align: center;
+}
+
+aside hr{
+    color: #F3F4F6;
+    width: 90%;
+    margin: 0 auto;
+}
+
+aside .logout i{
+    width: 10%;
+    text-align: center;
+}
+aside .logout{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+button{
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
